@@ -19,6 +19,7 @@ def open_file(name_of_file):
         print(f.read())
         return ''
 
+
 option = input("1. Do you want to create a new file?, Or \n2. Open an existing file,\nplease enter 1 or 2 :")
 if option == "1":
 # File creation interface
@@ -33,5 +34,6 @@ elif option == "2":
   x = open_file(Name_of_file)
   print(x)
 else:
-  print(">>> only '1' or '2' allowed.Your input", option.capitalize(), "is invalid.")
+  print(">>> only '1' or '2' allowed.Your input", option, "is invalid.")
 
+print("Endorsed by O.J.A")

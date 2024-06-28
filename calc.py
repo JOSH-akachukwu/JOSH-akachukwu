@@ -6,7 +6,7 @@ y = np.array([0,3,5,7,9,11])
 
 plt.plot(x,y)
 
-plt.xlabel('age')
-plt.ylabel('name')
+plt.xlabel(input("x axix :"))
+plt.ylabel(input("y axix :"))
 
 plt.show()
