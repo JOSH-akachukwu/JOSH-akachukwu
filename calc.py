@@ -1,12 +1,7 @@
-import matplotlib.pyplot as plt
-import numpy as np
+class student:
+      pass
 
-x = np.array([0,2,4,6,8,10])
-y = np.array([0,3,5,7,9,11])
 
-plt.plot(x,y)
+student1=student ()
 
-plt.xlabel(input("x axix :"))
-plt.ylabel(input("y axix :"))
-
-plt.show()
+student2=student ()
