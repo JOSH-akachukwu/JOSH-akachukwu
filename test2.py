@@ -15,9 +15,13 @@ def file(name_of_file, files):
     return ''
 
 def open_file(name_of_file):
-        f = open(name_of_file)
-        print(f.read())
-        return ''
+        try:
+          f = open(name_of_file)
+          print(f.read())
+          return ''
+        except:
+           print("The file does not exist.")
+           return ''
 
 
 option = input("1. Do you want to create a new file?, Or \n2. Open an existing file,\nplease enter 1 or 2 :")
@@ -37,3 +41,5 @@ else:
   print(">>> only '1' or '2' allowed.Your input", option, "is invalid.")
 
 print("Endorsed by O.J.A")
+
+

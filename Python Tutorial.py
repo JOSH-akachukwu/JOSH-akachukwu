@@ -25,7 +25,7 @@ Intro = (
 Print_statement = (
     
     """
-The print statement
+* The print statement
     The print statement tells the computer to display information on the monitor screen
     the print call has a very easy way of using it
     >>> print() <<<
@@ -36,7 +36,7 @@ The print statement
 )
 input_statement = (
     """
-The input statement
+* The input statement
     It tells the computer to accept data from the user,afterwards uses it as programed
     the simple syntax for using the input statement is:
     >>> input() <<<
@@ -45,18 +45,26 @@ The input statement
     Give it a try."""
 )
 
+def input_state():
+    x = input_statement
+    print(x)
+    return'' 
+def print_state():
+    x = Print_statement
+    print(x)
+    next = input("press enter to go to the next tutorial!")
+    if next == '':
+        print(input_state())
+        return''
+
 
 def intr():
     x =  Intro
-    return x
-
-def print_state():
-    x = Print_statement
-    return x 
-
-def input_state():
-    x = input_statement
-    return x
+    print(x)
+    next = input("press enter to go to the next tutorial!")
+    if next == '':
+        print(print_state())
+        return "DONE!!"
 
 Ui = input("press enter to start, or, refer to any tutorial number to go directly to it.")
 var = ''
@@ -68,4 +76,7 @@ elif Ui == '3':
     print(input_state())
 else:
     print("invalid input!")
+
+
+
 

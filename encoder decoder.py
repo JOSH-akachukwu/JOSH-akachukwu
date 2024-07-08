@@ -1,4 +1,4 @@
-text = "visual studio code"
+text = "rylvwlxypx"
  #'Hello aka'
 custom_key = 'python'
 
