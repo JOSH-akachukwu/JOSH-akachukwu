@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @JOSH-akachukwu
-- 👀 I’m interested in ... web developing.
+- 👀 I’m interested in ... web dev , Game dev , Graphics and texture design.
 - 🌱 I’m currently learning ...Javascript.
 - 💞️ I’m looking to collaborate on ...web making.
 - 📫 How to reach me ...onwuemenyijoshua@gmail.com
