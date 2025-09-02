@@ -114,16 +114,13 @@ def finalEdit(line : str) :
 def callFE() -> None :
    n = 1
    f = ''
-   # path = filePath
    path = input("File Directory For callFE function : ")
    folders = os.listdir(path)
    dc = []
    for folder in folders :
-      # os.chdir(path)
       os.chdir(f"{path}\\{folder}")
       files = os.listdir(f"{path}\\{folder}")
       for file in files :
-         # print(n,folder, file)
          dc.append(file)
          gg = []
          with open(f"{str(file)}", '+r', encoding= 'utf-8') as p:
@@ -137,15 +134,9 @@ def callFE() -> None :
             if Newfile.writable() :
                for i in gg :
                   Newfile.writelines(f'{i}\n')
-               # print(f'writing to Newfile "{Newfile}"')
             else :
                print('File not writable!')
          os.remove('OLD.txt')
    print('All Processess Done')
 # intro()
 callFE()
-# try :
-#    pass
-#    int()
-# except :
-#    pass
